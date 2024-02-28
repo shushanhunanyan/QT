@@ -1,0 +1,9 @@
+/home/shushan/QTGetStarted/Calculator/build/CMakeFiles/Calculator.dir
+/home/shushan/QTGetStarted/Calculator/build/CMakeFiles/edit_cache.dir
+/home/shushan/QTGetStarted/Calculator/build/CMakeFiles/rebuild_cache.dir
+/home/shushan/QTGetStarted/Calculator/build/CMakeFiles/list_install_components.dir
+/home/shushan/QTGetStarted/Calculator/build/CMakeFiles/install.dir
+/home/shushan/QTGetStarted/Calculator/build/CMakeFiles/install/local.dir
+/home/shushan/QTGetStarted/Calculator/build/CMakeFiles/install/strip.dir
+/home/shushan/QTGetStarted/Calculator/build/CMakeFiles/Calculator_autogen_timestamp_deps.dir
+/home/shushan/QTGetStarted/Calculator/build/CMakeFiles/Calculator_autogen.dir

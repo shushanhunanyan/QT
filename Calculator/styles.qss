@@ -1,0 +1,40 @@
+QLineEdit {
+    background-color: #fff;
+    border: 0.5px #555555;
+    color: #555555;
+    border-radius: 8px;
+}
+
+QPushButton {
+    background-color: #d7d5d5;
+    border: 0.5px #514f4f;
+    color: #555555;
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    background-color: #e3e3e3;
+    color: #555555;
+}
+
+QPushButton.operatorButton {
+    background-color: #b9b8b8;
+    border: 0.5px solid #514f4f;
+    color: #555555;
+    border-radius: 10px;
+}
+
+QPushButton.operatorButton:hover {
+    background-color: #f5b041;
+    color: #555555;
+}
+
+QPushButton.buttonEqual:hover {
+    background-color: #52be80;
+    color: #555555;
+}
+
+QPushButton.buttonClear:hover {
+    background-color: #ec7063;
+    color: #555555;
+}
