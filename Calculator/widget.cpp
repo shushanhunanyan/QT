@@ -40,32 +40,13 @@ void Widget::_createLayout()
 }
 
 
-void Widget::_setCustomStyle()
-{
-    // Get the application's executable path
-    QString executablePath = QCoreApplication::applicationDirPath();
+void Widget::_setCustomStyle() {
 
-    // Build the absolute path to the styles.qss file
-    QString stylesFilePath = executablePath + "/qstyle/styles.qss";
+    QFile qss(":/styles/styles.qss");
+    qss.open(QFile::ReadOnly);
+    setStyleSheet(qss.readAll());
+    qss.close();
 
-    // Use the absolute path to open the QFile
-    QFile styleFile(stylesFilePath);
-
-    if (styleFile.open(QFile::ReadOnly | QFile::Text)) {
-        this->setStyleSheet(styleFile.readAll());
-        qDebug() << "Stylesheet applied successfully.";
-    } else {
-        qDebug() << "Failed to open stylesheet file:" << styleFile.errorString();
-    }
-
-   /* QFile styleFile(":/resources/styles.qss");
-
-    if (styleFile.open(QFile::ReadOnly | QFile::Text)) {
-        this->setStyleSheet(styleFile.readAll());
-        qDebug() << "Stylesheet applied successfully.";
-    } else {
-        qDebug() << "Failed to open stylesheet file:" << styleFile.errorString();
-    }*/
 }
 
 //don't look at magic numbers
@@ -178,7 +159,7 @@ double Widget::_calculatePostfix(const QString& postfix)
 {
     QStack<double> stack;
 
-    QStringList tokens = postfix.split(' ', QString::SkipEmptyParts);
+    QStringList tokens = postfix.split(' ', Qt::SkipEmptyParts);
 
     for (const QString& token : tokens) {
         if (token[0].isDigit() || (token.length() > 1 && (token[0] == '-' && token[1].isDigit()))) {

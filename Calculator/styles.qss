@@ -1,5 +1,5 @@
 QLineEdit {
-    background-color: #fff;
+    background-color: #FFF;
     border: 0.5px #555555;
     color: #555555;
     border-radius: 8px;
@@ -17,24 +17,20 @@ QPushButton:hover {
     color: #555555;
 }
 
-QPushButton.operatorButton {
+QPushButton#operationButtons {
     background-color: #b9b8b8;
     border: 0.5px solid #514f4f;
     color: #555555;
     border-radius: 10px;
 }
 
-QPushButton.operatorButton:hover {
+QPushButton#operationButtons[5]:hover {
     background-color: #f5b041;
     color: #555555;
 }
 
-QPushButton.buttonEqual:hover {
-    background-color: #52be80;
-    color: #555555;
-}
 
-QPushButton.buttonClear:hover {
+QPushButton.operationButtons[6]:hover {
     background-color: #ec7063;
     color: #555555;
 }
